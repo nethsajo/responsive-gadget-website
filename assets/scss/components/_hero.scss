@@ -1,0 +1,49 @@
+/*============== HERO */
+.hero {
+  width: 100%;
+  display: grid;
+  height: calc(100vh - 80px);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 100px;
+  column-gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: var(--hero-font-size);
+      font-weight: var(--font-bold);
+      margin: 0;
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+
+    & p:nth-child(3) {
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-normal);
+    }
+  }
+
+  &__image-container {
+    img {
+      max-width: 600px;
+      max-height: 600px;
+      height: auto;
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  & button {
+    width: 300px;
+    border-radius: 8px;
+    height: 55px;
+    margin: 50px 0;
+  }
+}

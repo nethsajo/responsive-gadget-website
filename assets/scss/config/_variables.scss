@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;800&display=swap');
 
 /*============== VARIABLES CSS */
-
 :root {
   --nav-height: 80px;
   /*============== COLORS */
@@ -22,12 +21,13 @@
   --transition: all 500ms ease-in-out;
 
   /*============== FONT SIZE AND TYPOGRAPHY */
-  --biggest-font-size: 32px;
+  --hero-font-size: 48px;
+  --h1-font-size: 32px;
   --h2-font-size: 22px;
   --h3-font-size: 18px;
   --normal-font-size: 16px;
-  --small-font-size: 12px;
-  --xs-font-size: 10px;
+  --small-font-size: 14px;
+  --xs-font-size: 12px;
 
   /*============== FONT WEIGHT */
   --font-light: 300;

@@ -19,12 +19,13 @@
   --gray-bg-color: #f3f3f3;
   --transition: all 500ms ease-in-out;
   /*============== FONT SIZE AND TYPOGRAPHY */
-  --biggest-font-size: 32px;
+  --hero-font-size: 48px;
+  --h1-font-size: 32px;
   --h2-font-size: 22px;
   --h3-font-size: 18px;
   --normal-font-size: 16px;
-  --small-font-size: 12px;
-  --xs-font-size: 10px;
+  --small-font-size: 14px;
+  --xs-font-size: 12px;
   /*============== FONT WEIGHT */
   --font-light: 300;
   --font-normal: 400;
@@ -199,4 +200,52 @@ textarea {
   align-items: center;
   justify-content: flex-start;
   column-gap: 10px;
+}
+
+/*============== HERO */
+.hero {
+  width: 100%;
+  display: grid;
+  height: calc(100vh - 80px);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 100px;
+  column-gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__text-container h1 {
+  font-size: var(--hero-font-size);
+  font-weight: var(--font-bold);
+  margin: 0;
+}
+
+.hero__text-container h1 span {
+  color: var(--primary-color);
+}
+
+.hero__text-container p:nth-child(3) {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+}
+
+.hero__image-container img {
+  max-width: 600px;
+  max-height: 600px;
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.hero button {
+  width: 300px;
+  border-radius: 8px;
+  height: 55px;
+  margin: 50px 0;
 }
