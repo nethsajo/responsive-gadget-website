@@ -1,6 +1,9 @@
+/*============== GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;800&display=swap");
+/*============== VARIABLES CSS */
 :root {
   --nav-height: 80px;
+  /*============== COLORS */
   --body-font-family: 'Heebo', sans-serif;
   --primary-color: #0073ee;
   --primary-light-color: #037cff;
@@ -8,16 +11,21 @@
   --secondary-light-color: #454b69;
   --light-color: #e6f2ff;
   --gray-color: #e6f2dd;
+  --gray-dark-color: #a7adb8;
   --default-text-color: #1d1d1f;
   --title-text-color: #262626;
-  --body-bg-color: #fff;
-  --footer-bg-color: #f3f3f3;
+  --text-white: #fff;
+  --white-bg-color: #fff;
+  --gray-bg-color: #f3f3f3;
+  --transition: all 500ms ease-in-out;
+  /*============== FONT SIZE AND TYPOGRAPHY */
   --biggest-font-size: 32px;
   --h2-font-size: 22px;
   --h3-font-size: 18px;
-  --normal-font-size: 15px;
+  --normal-font-size: 16px;
   --small-font-size: 12px;
   --xs-font-size: 10px;
+  /*============== FONT WEIGHT */
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
@@ -25,6 +33,7 @@
   --font-bold: 800;
 }
 
+/*============== BASE */
 html,
 body {
   margin: 0;
@@ -62,4 +71,132 @@ textarea {
 
 textarea {
   resize: none;
+}
+
+/*============== REUSABLE CLASSES */
+.section-title {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+/*============== MAIN LAYOUT */
+.main-container {
+  position: relative;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/*============== BUTTONS */
+.btn {
+  width: auto;
+  cursor: pointer;
+  height: 36px;
+  font-size: var(--font-normal);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  line-height: 36px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 30px;
+}
+
+.btn__none {
+  color: var(--primary-color);
+  background: var(--white-bg-color);
+}
+
+.btn__primary {
+  color: var(--text-white);
+  background: var(--primary-color);
+  transition: var(--transition);
+}
+
+.btn__primary:hover {
+  background: var(--primary-light-color);
+}
+
+.btn__secondary {
+  color: var(--primary-light-color);
+  background: var(--light-color);
+  transition: var(--transition);
+}
+
+.btn__secondary:hover {
+  background: var(--gray-color);
+}
+
+/*============== HEADER */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
+/*============== NAVIGATION */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__hamburger-container {
+  display: none;
+}
+
+.nav__logo-container {
+  width: 128px;
+  cursor: pointer;
+}
+
+.nav__logo-container a {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.nav__logo-container span {
+  color: var(--gray-dark-color);
+}
+
+.nav__menu-container {
+  display: flex;
+}
+
+.nav__menu-container li {
+  padding: 0 10px;
+}
+
+.nav__menu-container li a {
+  font-weight: var(--font-normal);
+  font-size: var(--normal-font-size);
+  transition: var(--transition);
+  color: var(--default-text-color);
+}
+
+.nav__menu-container li a:hover {
+  color: var(--gray-dark-color);
+}
+
+.nav__btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
 }

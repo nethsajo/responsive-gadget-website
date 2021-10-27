@@ -1,0 +1,65 @@
+/*============== HEADER */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
+/*============== NAVIGATION */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__hamburger-container {
+    display: none;
+  }
+
+  &__logo-container {
+    width: 128px;
+    cursor: pointer;
+
+    a {
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--primary-color);
+    }
+
+    span {
+      color: var(--gray-dark-color);
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+
+    li {
+      padding: 0 10px;
+
+      a {
+        font-weight: var(--font-normal);
+        font-size: var(--normal-font-size);
+        transition: var(--transition);
+        color: var(--default-text-color);
+
+        &:hover {
+          color: var(--gray-dark-color);
+        }
+      }
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+}

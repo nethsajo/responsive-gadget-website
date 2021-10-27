@@ -1,11 +1,11 @@
-// GOOGLE FONT
+/*============== GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;800&display=swap');
 
-// VARIABLES CSS
+/*============== VARIABLES CSS */
 
 :root {
   --nav-height: 80px;
-  // COLORS
+  /*============== COLORS */
   --body-font-family: 'Heebo', sans-serif;
   --primary-color: #0073ee;
   --primary-light-color: #037cff;
@@ -13,20 +13,23 @@
   --secondary-light-color: #454b69;
   --light-color: #e6f2ff;
   --gray-color: #e6f2dd;
+  --gray-dark-color: #a7adb8;
   --default-text-color: #1d1d1f;
   --title-text-color: #262626;
-  --body-bg-color: #fff;
-  --footer-bg-color: #f3f3f3;
+  --text-white: #fff;
+  --white-bg-color: #fff;
+  --gray-bg-color: #f3f3f3;
+  --transition: all 500ms ease-in-out;
 
-  // FONT SIZE AND TYPOGRAPHY
+  /*============== FONT SIZE AND TYPOGRAPHY */
   --biggest-font-size: 32px;
   --h2-font-size: 22px;
   --h3-font-size: 18px;
-  --normal-font-size: 15px;
+  --normal-font-size: 16px;
   --small-font-size: 12px;
   --xs-font-size: 10px;
 
-  // FONT WEIGHT
+  /*============== FONT WEIGHT */
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;

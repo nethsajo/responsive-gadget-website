@@ -1,0 +1,39 @@
+/*============== BUTTONS */
+.btn {
+  width: auto;
+  cursor: pointer;
+  height: 36px;
+  font-size: var(--font-normal);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  line-height: 36px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 30px;
+
+  &__none {
+    color: var(--primary-color);
+    background: var(--white-bg-color);
+  }
+
+  &__primary {
+    color: var(--text-white);
+    background: var(--primary-color);
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--primary-light-color);
+    }
+  }
+
+  &__secondary {
+    color: var(--primary-light-color);
+    background: var(--light-color);
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--gray-color);
+    }
+  }
+}
