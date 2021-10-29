@@ -20,8 +20,8 @@
   --transition: all 500ms ease-in-out;
   /*============== FONT SIZE AND TYPOGRAPHY */
   --hero-font-size: 48px;
-  --h1-font-size: 32px;
-  --h2-font-size: 22px;
+  --h1-font-size: 42px;
+  --h2-font-size: 38px;
   --h3-font-size: 18px;
   --normal-font-size: 16px;
   --small-font-size: 14px;
@@ -348,4 +348,74 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+
+/*============== NEWS */
+.news__heading-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 50px;
+}
+
+.news__heading-image img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+.news__heading-text {
+  padding: 30px;
+  text-align: center;
+  max-width: 580px;
+}
+
+.news__heading-text h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-light);
+  color: var(--default-text-color);
+  margin-top: 0;
+}
+
+.news__heading-text p {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0;
+}
+
+.news__grid-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+
+.news__grid-items .news-details {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news__grid-items .news-details .news-image {
+  background: var(--light-color);
+}
+
+.news__grid-items .news-details .news-image img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 200px;
+}
+
+.news__grid-items .news-details .news-text {
+  padding: 15px 25px;
+}
+
+.news__grid-items .news-details .news-text h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: var(--font-semi-bold);
+  color: var(--default-text-color);
 }

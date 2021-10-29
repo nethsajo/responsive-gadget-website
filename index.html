@@ -178,13 +178,13 @@
       </section>
 
       <!-- News Section -->
-      <section class="news-section flex-col" id="news">
+      <section class="news flex-col" id="news">
         <h1 class="section-title">Technology News</h1>
-        <div class="news-heading-content">
-          <div class="news-heading-image">
+        <div class="news__heading-content">
+          <div class="news__heading-image">
             <img src="./assets/images/news-heading.svg" alt="News Heading" />
           </div>
-          <div class="news-heading-text">
+          <div class="news__heading-text">
             <h2>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Mollitia, dolore adipisci reiciendis accusamus recusandae rerum!
@@ -195,7 +195,7 @@
             </p>
           </div>
         </div>
-        <div class="news-grid-items">
+        <div class="news__grid-items">
           <div class="news-details">
             <div class="news-image">
               <img src="./assets/images/news-images.svg" alt="News" />
@@ -218,8 +218,7 @@
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Tenetur culpa mollitia magni voluptatibus provident deleniti
-                laboriosam aliquid ratione temporibus vero perferendis sunt
-                neque iure excepturi suscipit, accusantium quidem autem dolorum!
+                laboriosam.
               </p>
             </div>
           </div>
@@ -249,6 +248,37 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="contact-heading">
+          <h1>Contact Us</h1>
+          <p>
+            Our inbox is always open. We love hearing from our customers and
+            visitors. Please don’t hesitate to reach out to us for any
+            inquiries, questions, suggestions, or even just for a quick hello.
+          </p>
+          <p>
+            Office Hours: Monday - Friday 9am to 6pm. We are closed on
+            Saturdays, Sundays and public holidays.
+          </p>
+        </div>
+        <form class="form-wrapper">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Full Name"
+          />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="btn-secondary">Send</button>
+        </form>
       </section>
     </main>
   </body>
