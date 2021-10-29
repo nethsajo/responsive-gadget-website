@@ -1,0 +1,60 @@
+/*============== DEALS */
+.deals {
+  &__grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 22px;
+    row-gap: 20px;
+    justify-content: center;
+
+    & .deals-details-container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 18px;
+      height: 500px;
+      cursor: pointer;
+      border: 1px solid #f6f9fd;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+
+      &:hover {
+        box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.07);
+        transform: scale3d(1.01, 1.01, 1.01);
+      }
+
+      & .image-container {
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+
+        img {
+          max-width: 350px;
+          max-height: 350px;
+          height: auto;
+          width: 70%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      & .text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+        h3 {
+          color: #1d1d1f;
+          font-size: 28px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
