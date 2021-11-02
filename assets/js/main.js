@@ -1,5 +1,6 @@
-const menuIcon = document.getElementById('hamburger-icon');
-const menu = document.getElementById('menus');
+const menuIcon = document.querySelector('#hamburger-icon');
+const menu = document.querySelector('#menus');
+const preload = document.querySelector('#preload');
 
 window.addEventListener('DOMContentLoaded', () => {
   menuIcon.addEventListener('click', () => {
@@ -17,4 +18,8 @@ window.addEventListener('resize', () => {
       menu.classList.remove('active');
     }
   }
+});
+
+window.addEventListener('load', () => {
+  preload.style.opacity = '0';
 });

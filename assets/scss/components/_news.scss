@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px 0px 50px;
+    padding: 25px 0px 100px;
   }
 
   &__heading-image img {
@@ -21,14 +21,14 @@
     max-width: 580px;
 
     h2 {
-      font-size: var(--h2-font-size);
-      font-weight: var(--font-light);
+      font-size: var(--h1-font-size);
+      font-weight: var(--font-normal);
       color: var(--default-text-color);
       margin-top: 0;
     }
 
     p {
-      font-size: var(--normal-font-size);
+      font-size: 18px;
       margin-bottom: 0;
     }
   }
