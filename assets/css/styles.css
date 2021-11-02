@@ -138,7 +138,7 @@ textarea {
 
 /*============== HEADER */
 .header-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -602,6 +602,9 @@ textarea {
   .section-title {
     font-size: 24px;
   }
+  .header-container {
+    position: sticky;
+  }
   .header-container .nav {
     padding: 20px 60px;
     height: 40px;
@@ -652,14 +655,56 @@ textarea {
     display: none;
   }
   .hero {
-    padding-top: 140px;
+    padding-top: 110px;
     height: auto;
   }
   .hero__image-container img {
     margin-top: -150px;
   }
+  .reviews__grid-items .review-details-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+  }
+  .reviews__grid-items .review-details-container .image-container i {
+    font-size: 75px;
+  }
+  .deals__grid-items .deals-details-container {
+    height: 350px;
+  }
+  .deals__grid-items .deals-details-container .text-container h3 {
+    font-size: 20px;
+  }
+  .deals__grid-items .deals-details-container .text-container p {
+    font-size: 14px;
+  }
+  .deals__grid-items .deals-details-container .image-container img {
+    width: 55%;
+  }
+  .news__heading-image img {
+    width: 100%;
+  }
+  .news__heading-text h2 {
+    font-weight: var(--font-normal);
+    font-size: 28px;
+  }
+  .news__heading-text p {
+    font-size: 16px;
+  }
   .news__grid-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .news__grid-items .news-details .news-image img {
+    height: 135px;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .news__grid-items .news-details .news-text h4 {
+    font-size: 20px;
+    font-weight: var(--font-semi-bold);
+  }
+  .news__grid-items .news-details .news-text p {
+    font-size: var(--small-font-size);
   }
   .footer__inner {
     grid-template-columns: repeat(2, 1fr);
@@ -668,13 +713,23 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
-  .reviews__grid-items .review-details-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 75px auto;
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    column-gap: 25px;
   }
-  .reviews__grid-items .review-details-container .image-container i {
-    font-size: 50px;
-    margin: 10px 0 20px;
+  .hero__text-container {
+    align-items: center;
+    text-align: center;
+  }
+  .hero__text-container h1 {
+    font-size: 40px;
+  }
+  .hero__text-container p {
+    font-size: var(--normal-font-size);
+  }
+  .hero__text-container p:nth-child(3) {
+    font-size: var(--small-font-size);
   }
   .deals__grid-items {
     grid-template-columns: repeat(2, 1fr);
@@ -691,15 +746,6 @@ textarea {
   .deals__grid-items .deals-details-container .image-container img {
     width: 45%;
   }
-  .news__heading-image img {
-    width: 100%;
-  }
-  .news__heading-text h2 {
-    font-size: 22px;
-  }
-  .news__heading-text p {
-    font-size: 14px;
-  }
   .contact__heading h1 {
     margin: 0;
     font-size: 24px;
@@ -715,8 +761,7 @@ textarea {
   }
   .hero {
     grid-template-columns: 1fr;
-    padding-top: 120px;
-    height: auto;
+    padding-top: 80px;
   }
   .hero__text-container {
     align-items: center;
@@ -788,13 +833,13 @@ textarea {
     padding-right: 25px;
   }
   .hero {
-    padding-top: 80px;
+    padding-top: 60px;
   }
   .hero__text-container h1 {
-    font-size: 26px;
+    font-size: 42px;
   }
   .hero__text-container p {
-    font-size: var(--xs-font-size);
+    font-size: var(--small-font-size);
   }
   .hero__text-container p:nth-child(3) {
     font-size: var(--small-font-size);
@@ -826,7 +871,7 @@ textarea {
     grid-template-columns: 1fr;
   }
   .deals__grid-items .deals-details-container {
-    height: 330px;
+    height: 300px;
   }
   .deals__grid-items .deals-details-container .text-container h3 {
     font-size: 20px;
@@ -841,10 +886,10 @@ textarea {
     grid-template-columns: 1fr;
   }
   .news__grid-items .news-details .news-image img {
-    height: 135px;
-    width: 42%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 115px;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .news__grid-items .news-details .news-text h4 {
     font-size: var(--normal-font-size);

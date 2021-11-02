@@ -24,6 +24,7 @@
   }
 
   .header-container {
+    position: sticky;
     .nav {
       padding: 20px 60px;
       height: 40px;
@@ -83,7 +84,7 @@
   }
 
   .hero {
-    padding-top: 140px;
+    padding-top: 110px;
     height: auto;
 
     &__image-container img {
@@ -91,9 +92,79 @@
     }
   }
 
+  .reviews {
+    &__grid-items {
+      .review-details-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr;
+
+        .image-container i {
+          font-size: 75px;
+        }
+      }
+    }
+  }
+
+  .deals {
+    &__grid-items {
+      .deals-details-container {
+        height: 350px;
+
+        .text-container {
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .image-container img {
+          width: 55%;
+        }
+      }
+    }
+  }
+
   .news {
+    &__heading-image img {
+      width: 100%;
+    }
+
+    &__heading-text {
+      h2 {
+        font-weight: var(--font-normal);
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
     &__grid-items {
       grid-template-columns: repeat(2, 1fr);
+
+      .news-details {
+        .news-image img {
+          height: 135px;
+          width: 50%;
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+
+        .news-text {
+          h4 {
+            font-size: 20px;
+            font-weight: var(--font-semi-bold);
+          }
+
+          p {
+            font-size: var(--small-font-size);
+          }
+        }
+      }
     }
   }
 
@@ -104,17 +175,29 @@
 }
 
 @media screen and (max-width: 992px) {
-  .reviews {
-    &__grid-items {
-      .review-details-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 75px auto;
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    column-gap: 25px;
 
-        .image-container i {
-          font-size: 50px;
-          margin: 10px 0 20px;
-        }
+    &__text-container {
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 40px;
       }
+
+      p {
+        font-size: var(--normal-font-size);
+      }
+
+      p:nth-child(3) {
+        font-size: var(--small-font-size);
+      }
+    }
+
+    &__image-container {
     }
   }
 
@@ -142,22 +225,6 @@
     }
   }
 
-  .news {
-    &__heading-image img {
-      width: 100%;
-    }
-
-    &__heading-text {
-      h2 {
-        font-size: 22px;
-      }
-
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-
   .contact {
     &__heading {
       h1 {
@@ -179,8 +246,7 @@
 
   .hero {
     grid-template-columns: 1fr;
-    padding-top: 120px;
-    height: auto;
+    padding-top: 80px;
 
     &__text-container {
       align-items: center;
@@ -285,15 +351,15 @@
   }
 
   .hero {
-    padding-top: 80px;
+    padding-top: 60px;
 
     &__text-container {
       h1 {
-        font-size: 26px;
+        font-size: 42px;
       }
 
       p {
-        font-size: var(--xs-font-size);
+        font-size: var(--small-font-size);
       }
 
       p:nth-child(3) {
@@ -345,7 +411,7 @@
       grid-template-columns: 1fr;
 
       & .deals-details-container {
-        height: 330px;
+        height: 300px;
 
         .text-container h3 {
           font-size: 20px;
@@ -369,10 +435,10 @@
       & .news-details {
         .news-image {
           img {
-            height: 135px;
-            width: 42%;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            height: 115px;
+            width: 40%;
+            margin-top: 20px;
+            margin-bottom: 20px;
           }
         }
 
