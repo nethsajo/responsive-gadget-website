@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
   </head>
@@ -28,18 +32,17 @@
       <!-- NAVIGATION -->
       <nav class="nav">
         <div class="nav__hamburger-container" id="hamburger-icon">
-          <span></span>
-          <span></span>
+          <i class="bx bx-menu bx-sm icon-menu" id="icon"></i>
         </div>
         <div class="nav__logo-container">
           <a href="index.html">Gadget<span>Zone</span></a>
         </div>
         <ul class="nav__menu-container" id="menus">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#deals">Deals</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li id="nav__item"><a href="#home">Home</a></li>
+          <li id="nav__item"><a href="#reviews">Reviews</a></li>
+          <li id="nav__item"><a href="#deals">Deals</a></li>
+          <li id="nav__item"><a href="#news">News</a></li>
+          <li id="nav__item"><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav__btn-container">
           <button class="btn btn__none">Sign In</button>
@@ -343,6 +346,13 @@
         </div>
       </div>
     </footer>
+    <a href="#" id="scrollTop" class="scrollTop">
+      <i class="bx bx-chevrons-up bx-sm scrollTop__icon"></i>
+    </a>
+    <script
+      type="text/javascript"
+      src="./assets/js/scrollreveal.min.js"
+    ></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -302,6 +302,7 @@ textarea {
 
 .nav__menu-container li {
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .nav__menu-container li a {
@@ -701,6 +702,33 @@ textarea {
   font-weight: var(--font-normal);
 }
 
+/*============== SCROLL */
+.scrollTop {
+  position: fixed;
+  background: var(--primary-color);
+  bottom: -70px;
+  right: 80px;
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 5;
+  transition: var(--transition);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.scrollTop__icon {
+  color: #fff;
+}
+
+.scrollTop:hover {
+  opacity: 0.8;
+}
+
+.show-scrollTop {
+  bottom: 70px;
+}
+
 /*============== MEDIA QUERIES */
 @media screen and (min-width: 1024px) {
   .main-container,
@@ -716,6 +744,9 @@ textarea {
   .main-container,
   .footer__wrapper {
     padding: 0 60px;
+  }
+  .scrollTop {
+    right: 60px;
   }
   .section-title {
     font-size: 24px;
@@ -760,14 +791,9 @@ textarea {
     cursor: pointer;
     z-index: 2;
     padding-right: 60px;
-    margin-top: -3px;
   }
-  .header-container .nav__hamburger-container span {
-    display: block;
-    height: 2px;
-    width: 20px;
-    background-color: var(--primary-color);
-    margin: 5px 0px;
+  .header-container .nav__hamburger-container .icon-menu {
+    color: var(--primary-color);
   }
   .header-container .nav__btn-container {
     display: none;
@@ -943,6 +969,10 @@ textarea {
   .main-container,
   .footer__wrapper {
     padding: 0 25px;
+  }
+  .scrollTop {
+    right: 25px;
+    padding: 8px;
   }
   .header-container .nav {
     padding: 10px 25px;
